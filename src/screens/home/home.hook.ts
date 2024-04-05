@@ -16,8 +16,8 @@ export function useHomeScreen() {
             NavigationProp<StackRouteListParams, StackRoutesList.CAR_DETAILS>
         >();
 
-    function handleItemPress() {
-        navigation.navigate(StackRoutesList.CAR_DETAILS);
+    function handleItemPress(car: CarProps) {
+        navigation.navigate(StackRoutesList.CAR_DETAILS, { car });
     }
 
     useEffect(() => {

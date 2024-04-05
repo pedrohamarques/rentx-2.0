@@ -34,8 +34,12 @@ export function HomeScreen() {
             ) : (
                 <S.CarList
                     data={cars}
+                    keyExtractor={item => String(item.id)}
                     renderItem={({ item }) => (
-                        <CarItem onPress={handleItemPress} data={item} />
+                        <CarItem
+                            onPress={() => handleItemPress(item)}
+                            data={item}
+                        />
                     )}
                 />
             )}

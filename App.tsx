@@ -3,9 +3,9 @@ import { ThemeProvider } from "styled-components/native";
 
 import theme from "@styles/theme";
 
-import { useApp } from "./App.hook";
+import Routes from "@routes/index";
 
-import HomeScreen from "@screens/home";
+import { useApp } from "./App.hook";
 
 export default function App() {
     const { isFontsLoaded } = useApp();
@@ -16,7 +16,7 @@ export default function App() {
 
     return (
         <ThemeProvider theme={theme}>
-            <HomeScreen />
+            <Routes />
         </ThemeProvider>
     );
 }

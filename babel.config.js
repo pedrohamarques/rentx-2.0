@@ -10,6 +10,7 @@ module.exports = function (api) {
                         "@styles": "./src/styles",
                         "@screens": "./src/screens",
                         "@typings": "./src/typings",
+                        "@assets": "./src/assets",
                     },
                 },
             ],

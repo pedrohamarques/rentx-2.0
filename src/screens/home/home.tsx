@@ -1,8 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+
+import Logo from "@assets/logo";
 
 import * as S from "./styled";
-import { StatusBar } from "expo-status-bar";
 
 export function HomeScreen() {
     return (
@@ -14,7 +16,7 @@ export function HomeScreen() {
             />
             <S.Header>
                 <S.HeaderContent>
-                    <Text>Image</Text>
+                    <Logo width={104} height={12} />
                     <S.HeaderText>{`Total of 0 car(s)`}</S.HeaderText>
                 </S.HeaderContent>
             </S.Header>

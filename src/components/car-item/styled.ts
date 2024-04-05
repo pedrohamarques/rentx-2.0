@@ -5,7 +5,7 @@ type CarItemStyleProps = {
 };
 
 export const Container = styled.TouchableOpacity<CarItemStyleProps>`
-    width: 95%;
+    width: 100%;
     height: 128px;
 
     background-color: ${({ theme }) => theme.colors.background_secondary};
@@ -14,7 +14,7 @@ export const Container = styled.TouchableOpacity<CarItemStyleProps>`
     justify-content: space-between;
     align-items: center;
 
-    padding: 24px;
+    padding: 12px;
     margin-bottom: 16px;
 `;
 

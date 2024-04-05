@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 import Logo from "@assets/logo";
+
 import { LoadingAnimation } from "@components/loading-animation";
+import { CarItem } from "@components/car-item";
 
 import * as S from "./styled";
 
@@ -33,10 +34,8 @@ export function HomeScreen() {
             ) : (
                 <S.CarList
                     data={[1, 2, 3]}
-                    renderItem={item => (
-                        <View>
-                            <Text>Carro</Text>
-                        </View>
+                    renderItem={({ data }) => (
+                        <CarItem onPress={() => {}} data={data} />
                     )}
                 />
             )}

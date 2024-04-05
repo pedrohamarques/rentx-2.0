@@ -8,6 +8,8 @@ module.exports = function (api) {
                 {
                     alias: {
                         "@styles": "./src/styles",
+                        "@screens": "./src/screens",
+                        "@typings": "./src/typings",
                     },
                 },
             ],

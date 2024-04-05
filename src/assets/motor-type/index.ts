@@ -1,0 +1,9 @@
+export { AccelerationMotorType } from "./acceleration";
+export { TurningDiameterMotorType } from "./turning-diameter";
+export { SpeedMotorType } from "./speed";
+export { GasolineMotorType } from "./gasoline";
+export { ElectricMotorType } from "./electric";
+export { HybridMotorType } from "./hybrid";
+export { ExchangeMotorType } from "./exchange";
+export { SeatsMotorType } from "./seats";
+export { CarMotorType } from "./car";

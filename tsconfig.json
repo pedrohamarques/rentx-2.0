@@ -8,7 +8,8 @@
             "@screens/*": ["./src/screens/*"],
             "@typings/*": ["./src/typings/*"],
             "@assets/*": ["./src/assets/*"],
-            "@components/*": ["./src/components/*"]
+            "@components/*": ["./src/components/*"],
+            "@utils/*": ["./src/utils/*"]
         }
     }
 }

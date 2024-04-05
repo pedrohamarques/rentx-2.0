@@ -12,6 +12,7 @@ module.exports = function (api) {
                         "@typings": "./src/typings",
                         "@assets": "./src/assets",
                         "@components": "./src/components",
+                        "@utils": "./src/utils",
                     },
                 },
             ],

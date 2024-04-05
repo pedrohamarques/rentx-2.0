@@ -33,9 +33,9 @@ export function HomeScreen() {
                 <LoadingAnimation />
             ) : (
                 <S.CarList
-                    data={[1, 2, 3]}
-                    renderItem={({ data }) => (
-                        <CarItem onPress={handleItemPress} data={data} />
+                    data={cars}
+                    renderItem={({ item }) => (
+                        <CarItem onPress={handleItemPress} data={item} />
                     )}
                 />
             )}

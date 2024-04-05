@@ -1,5 +1,7 @@
-import { FlatList, FlatListProps, View } from "react-native";
+import { FlatList, FlatListProps } from "react-native";
 import styled from "styled-components/native";
+
+import type { CarProps } from "@typings/data";
 
 export const Container = styled.View`
     flex: 1;
@@ -30,7 +32,7 @@ export const HeaderText = styled.Text`
 `;
 
 export const CarList = styled(
-    FlatList as new (props: FlatListProps<View>) => FlatList<View>,
+    FlatList as new (props: FlatListProps<CarProps>) => FlatList<CarProps[]>,
 ).attrs({
     contentContainerStyle: {
         padding: 24,

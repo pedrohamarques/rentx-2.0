@@ -11,7 +11,7 @@ import * as S from "./styled";
 import { useHomeScreen } from "./home.hook";
 
 export function HomeScreen() {
-    const { cars, isLoading } = useHomeScreen();
+    const { cars, isLoading, handleItemPress } = useHomeScreen();
 
     return (
         <S.Container>
@@ -35,7 +35,7 @@ export function HomeScreen() {
                 <S.CarList
                     data={[1, 2, 3]}
                     renderItem={({ data }) => (
-                        <CarItem onPress={() => {}} data={data} />
+                        <CarItem onPress={handleItemPress} data={data} />
                     )}
                 />
             )}

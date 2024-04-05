@@ -12,9 +12,11 @@ import {
     TurningDiameterMotorType,
 } from "@assets/motor-type";
 
-import type { MotorType } from "./types";
+import type { CarProps } from "@typings/data";
 
-export function getAccessoryIcon(type: MotorType) {
+type getAccessoryIconType = Pick<CarProps, "fuel_type">;
+
+export function getAccessoryIcon(type: getAccessoryIconType["fuel_type"]) {
     switch (type) {
         case "acceleration":
             return <AccelerationMotorType />;
